@@ -1,31 +1,8 @@
 <template>
   <div class="container">
-    <div>
-      <div @click="increment()">
-        <logo />
-      </div>
-      <h1 class="title" @click="increment()">
-        nuxt-typescript
-      </h1>
-      <h2 class="subtitle" @click="decrement()">
-        My awesome Nuxt.js project.
-      </h2>
-      <h3>Counter: {{ this.count }}</h3>
-      <User :payload="user" />
-      <User2 :payload="user" />
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <p>
+        madafaka
+    </p>
   </div>
 </template>
 
