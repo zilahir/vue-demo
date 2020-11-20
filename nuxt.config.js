@@ -1,3 +1,5 @@
+const strapiBaseUri = process.env.API_URL || "http://localhost:1337";
+
 module.exports = {
   mode: 'universal',
   telemetry: false,
@@ -39,7 +41,14 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    '@nuxtjs/strapi'
   ],
+
+  strapi: {
+    entities: ['articles'],
+    url: strapiBaseUri
+  },
+
   /*
    ** Build configuration
    */
